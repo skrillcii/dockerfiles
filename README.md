@@ -9,22 +9,10 @@ Based on [Ubuntu](https://hub.docker.com//ubuntu/) images.
 * docker
 * nvidia-docker
 
-## General Commands
+## Useful Commands
 * remove all running containers
 ```
 docker rm $(docker ps -a -q)
-```
-* start a container
-```
-docker start CONTAINER_ID
-```
-* start a container and stay in the session
-```
-docker start -ai CONTAINER_ID
-```
-* attach to a running container
-```
-docker attach CONTAINER_ID
 ```
 * remove dangling containers (built without success and shown as (none))
 ```
@@ -33,6 +21,31 @@ docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 * remove dangling build cache
 ```
 docker builder prune
+```
+## General Commands
+* run a container
+```
+docker run CONTAINER_ID
+```
+* run a container and stay in the session (interactive/terminal)
+```
+docker run -it CONTAINER_ID
+```
+* run a container in a detached mode
+```
+docker run -d CONTAINER_ID
+```
+* start a stopped container
+```
+docker start CONTAINER_ID
+```
+* start a stopped container and stay in the session (attach/interactive)
+```
+docker start -ai CONTAINER_ID
+```
+* attach to a running container
+```
+docker attach CONTAINER_ID
 ```
 
 ## References
