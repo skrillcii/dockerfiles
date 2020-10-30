@@ -15,7 +15,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends apt-utils && \
     apt-get upgrade -y && \
     apt-get install -y lsb-release && \
-    apt-get install -y build-essential && \
+    apt-get install -y build-essential cmake python3-dev && \
     apt-get install -y software-properties-common && \
     apt-get install -y zsh tmux vim curl wget git man htop && \
     apt-get install -y locales && locale-gen "en_US.UTF-8" && \

@@ -59,8 +59,7 @@ RUN apt-get update && \
 USER ${PERSONALIZED_USR}
 WORKDIR ${HOME}
 
-# Setup dotfiles
 # RUN git clone https://github.com/skrillcii/dotfiles.git /home/${PERSONALIZED_USR}/dotfiles
-
+# RUN bash -i ~/dotfiles/install_docker.sh
 
 CMD ["/usr/bin/zsh"]
