@@ -55,3 +55,4 @@ docker attach CONTAINER_ID
 * https://hub.docker.com/_/ubuntu
 * https://hub.docker.com/r/nvidia/cuda/
 * https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+* https://ypereirareis.github.io/blog/2015/05/04/docker-with-shell-script-or-makefile/

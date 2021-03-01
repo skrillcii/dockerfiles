@@ -8,5 +8,5 @@ else
     echo "Command Usage:"
     echo "./build.sh BASE_IMG BASE_TAG OUTPUT_IMG OUTPUT_TAG \n"
     echo "For Example:"
-    echo "./build.sh ubuntu-admin focal ubuntu-admin focal-custom \n"
+    echo "./build.sh admin ubuntu-focal admin ubuntu-focal-personalized \n"
 fi

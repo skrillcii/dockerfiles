@@ -1,1 +1,1 @@
-../commands/build-custom.sh
+../commands/build-ssh.sh
