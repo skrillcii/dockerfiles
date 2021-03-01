@@ -23,10 +23,10 @@ project_specific(){
     echo 'Building : '`pwd`
     ./build.sh admin ubuntu-focal admin ubuntu-focal-personalized
 
-    # admin:ubuntu-focal-personalized+example
+    # admin:ubuntu-focal-personalized-example
     cd ../../projects/example
     echo 'Building : '`pwd`
-    ./build.sh admin ubuntu-focal admin ubuntu-focal-personalized
+    ./build.sh admin ubuntu-focal admin ubuntu-focal-personalized-example
 }
 
 build_common

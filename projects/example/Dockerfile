@@ -13,7 +13,7 @@ ENV PERSONALIZED_UID=1000
 ENV PERSONALIZED_GID=1000
 
 ENV HOME=/home/${PERSONALIZED_USR}
-ENV SHELL=/usr/bin/bash
+ENV SHELL=/usr/bin/zsh
 ENV TERM=xterm-256color
 
 USER ${PERSONALIZED_USR}
@@ -23,4 +23,4 @@ WORKDIR ${HOME}
 # Start Setup #
 ###############
 
-CMD ["/usr/bin/zsh"]
+CMD ["zsh"]
